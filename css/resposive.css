@@ -1,0 +1,132 @@
+/* media queries ================ */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header .header-1{
+        padding:2rem;
+    }
+
+    section{
+        padding:3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .header .header-2{
+        display:none;
+    }
+
+    .bottom-navbar{
+        display: block;
+    }
+
+    #search-btn{
+        display: inline-block;
+    }
+
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .header .header-1 .search-form{
+        position:absolute;
+        top:-115%; right:2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .search-form.active{
+        top:115%;
+    }
+
+    .about-container .image img{
+        height: 25rem;
+        width: 25rem;
+        margin-right: 1rem;
+    }
+    
+    .about-container .content{
+        text-align: center;
+    }
+    
+    .about-container .content h1{
+        font-size: 3.5rem;
+    }
+    
+    .about-container .content h3{
+        font-size: 2.5rem;
+    }
+    
+    .about-container .content p{
+        font-size: 1.2rem;
+    }
+
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+
+    .newsletter{
+        background-position: right;
+    }
+
+    .newsletter form{
+        margin-left:0;
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width:570px){
+
+    .about-container .image img{
+        display: none; 
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    
+    .journal .journal-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .journal .journal-container .box .image{
+        height: 17rem;
+    }
+    
+    .journal .journal-container .box .content p{
+        font-size: 1rem;
+    }
+    
+    .journal .journal-container .box .content .icons span{
+        font-size: 1rem;
+    }
+}
